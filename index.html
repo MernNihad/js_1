@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // print
+      // console.log('hlo',10+20);
+
+      // // functions
+
+      // function name(params) {
+      //     console.log('name')
+      // }
+      // name()
+
+      // if(10< 5){
+      //     console.log(true)
+      // }else{
+      //     console.log(false)
+      // }
+
+      // let op = "+";
+
+      // switch (op) {
+      //     case '+':
+      //         console.log("+")
+      //         break;
+
+      //     default:
+      //         break;
+      // }
+
+      // let name = 10
+
+      // {
+      //     const h = '10'
+      //     // h = 20
+      //     // console.log(h)
+      // }
+      // {
+      //     var h = 9
+      //     console.log(h)
+
+      // }
+
+      // {
+      //     var h = 8
+      //     console.log(h)
+      // }
+
+      // let name = 'nihad'
+
+      // console.log(name)
+
+      // let arr = ['222',true,{n:40,bo:true},['hy']]
+      // console.log(arr)
+
+      // console.log(arr[0])
+
+      // let obj = {
+      //     name:'name',
+      //     age:10
+      // }
+      // console.log(obj.name)
+    </script>
+
+    <div id="div" class="div"></div>
+
+    <div class="mt-10">
+      <button id="btn-hide" onclick="hide()">hide</button>
+      <button id="btn-show" onclick="show()">show</button>
+      <button onclick="openAlert()">alert open</button>
+      <button onclick="closeAlert()">alert close</button>
+    </div>
+
+    <div class="alert" id="alert" style="">
+    <p onclick="closeAlert()" class="" style="text-align: end;padding-right:30px">x</p>
+</div>
+
+    <script>
+
+        function openAlert(params) {
+            document.getElementById("alert").style.opacity = "1"
+            document.getElementById("alert").style.transition = "1s"
+        }
+        function closeAlert(params) {
+            document.getElementById("alert").style.opacity = "0"
+            document.getElementById("alert").style.transition = "1s"
+
+        }
+    </script>
+    <style>
+      .alert{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: black;
+        color: white;
+        width: 300px;
+        border-radius: 20px;
+        height: 200px;
+      }
+      .mt-10 {
+        margin-top: 10px;
+      }
+      .div {
+        background-color: rgb(2, 32, 2);
+        font-family: sans-serif;
+        color: blueviolet;
+        width: 200px;
+        height: 200px;
+      }
+    </style>
+
+    <script>
+      function hide(params) {
+        const btnHide = document.getElementById("btn-hide");
+        const div = (document.getElementById("div").style.display = "none");
+        console.log(btnHide);
+      }
+
+      function show(params) {
+        const btnHide = document.getElementById("btn-show");
+        const div = (document.getElementById("div").style.display = "block");
+      }
+    </script>
+  </body>
+</html>
